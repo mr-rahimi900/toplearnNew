@@ -1,0 +1,339 @@
+/********** Transition ************/
+
+.multi-checkbox-in-row .checkbox-option label:before,
+.checkbox-layer .checkbox-option label:before,
+.multi-radio-in-row .radio-option label:before,
+.comments-list-layer .comment-item .right-col button {
+    outline: medium none;
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s
+}
+
+
+/*********** clearFix ************/
+
+.multi-checkbox-in-row:after,
+.multi-radio-in-row:after,
+.form-style .radio-selected:after,
+.comments-layer .heading:after,
+.comments-list-layer .comment-item:after,
+.page-style .main-page-content header ul:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0;
+    line-height: 0
+}
+
+.form-style {
+    padding: 10px 0
+}
+
+.msg-layer {
+    font-size: 12px;
+    word-spacing: -1px;
+    line-height: 24px;
+    padding: 5px 0;
+    color: #90adbf
+}
+
+.msg-layer.red {
+    color: #f86262
+}
+
+.page-style {
+    margin-bottom: 60px
+}
+
+.page-style .main-page-content header {
+    padding: 18px 0 10px;
+    border-bottom: 1px solid #eff2f5
+}
+
+.page-style .main-page-content header h1 {
+    position: relative;
+    padding-right: 40px;
+    line-height: 28px;
+    z-index: 2
+}
+
+.page-style .main-page-content header h1:before {
+    width: 60px;
+    height: 60px;
+    background: url('../images/course-bg.svg') no-repeat right bottom;
+    content: '';
+    position: absolute;
+    right: -24px;
+    top: -16px;
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    z-index: 0
+}
+
+.page-style .main-page-content header h1 a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #00b3e9;
+    overflow: hidden;
+    position: relative;
+    z-index: 2
+}
+
+.page-style .main-page-content header ul {
+    position: absolute;
+    left: 20px;
+    top: 22px;
+}
+
+.page-style .main-page-content header ul li {
+    display: inline-table;
+    float: left;
+    margin-right: 25px
+}
+
+.page-style .main-page-content header ul li:last-child {
+    margin-right: 0
+}
+
+.page-style .main-page-content header ul li span {
+    line-height: 20px;
+    font-size: 13px;
+    color: #82959d
+}
+
+.page-style .main-page-content header ul li span i {
+    font-size: 17px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+    color: #c1d0d7
+}
+
+.page-style .page-content .inner {
+    padding: 10px 25px;
+    position: relative;
+}
+
+
+/* --------style-style-------- */
+
+.department-location-info-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.department-location-info-items,
+.department-location-info-search-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.department-location-icon-circle {
+    margin-left: 8px;
+    color: #00b3e9;
+    font-size: 7px;
+    font-weight: bolder;
+}
+
+.department-location-text-item-info {
+    line-height: 30px;
+    font-size: 14px;
+    text-align: justify;
+    color: #222b30;
+}
+
+.department-location-true-item-info,
+.department-location-false-item-info {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.department-location-true-item-info {
+    background-color: #7fbb00;
+}
+
+.department-location-false-item-info {
+    background-color: #d6e1e7;
+}
+
+.department-location-info-search-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.department-location-icon-search {
+    font-size: 18px;
+    padding-left: 5px;
+    color: #adc1cc;
+}
+
+.form-control {
+    height: 45px !important;
+    outline: none !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* --------/style-style-------- */
+
+@media screen and (max-width: 1199px) {
+    .comments-layer {
+        padding: 20px
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .last-blog-post {
+        display: none
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-style .main-page-content header ul {
+        position: static;
+        margin-bottom: 10px
+    }
+    .page-style .main-page-content header ul li:first-child {
+        margin-left: 15px
+    }
+    .page-style .main-page-content header ul li {
+        float: right;
+    }
+    .page-style .main-page-content header h1:before {
+        display: none
+    }
+    .page-style .main-page-content header h1 {
+        padding-right: 25px
+    }
+    .page-style .main-page-content header h1 a {
+        font-size: 15px;
+    }
+    .page-style .main-page-content header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .comments-list-layer .comment-item .left-col .heading h4 {
+        display: block;
+        padding-left: 0;
+        margin-left: 0;
+        border-left: 0;
+        line-height: 20px;
+        padding-bottom: 8px
+    }
+    .comments-list-layer .comment-item .left-col .heading span {
+        display: block;
+        line-height: 20px
+    }
+    .comments-list-layer .comment-item>.comment-item .left-col {
+        padding-right: 15px
+    }
+    .comments-list-layer .comment-item>.comment-item .left-col .heading {
+        padding: 15px 90px 15px 5px
+    }
+    .comments-list-layer .comment-item>.comment-item .left-col .cm-text {
+        padding-top: 5px
+    }
+    .comments-list-layer .comment-item .left-col .heading span {
+        font-size: 12px
+    }
+    .comments-layer {
+        padding: 15px
+    }
+    .page-style .page-content .inner {
+        padding: 5px 20px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-style {
+        padding: 0
+    }
+    .form-style .input-layer,
+    .form-style .select-layer,
+    .form-style .textarea-layer {
+        margin-bottom: 25px
+    }
+    .multi-checkbox-in-row .checkbox-option label,
+    .checkbox-layer .checkbox-option label {
+        font-size: 13px;
+        word-spacing: -1px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-style .select-option-link {
+        position: static;
+        padding-right: 0;
+        border: 0;
+        padding-top: 15px
+    }
+    .form-style .radio-selected span {
+        min-width: 100%;
+        margin-bottom: 20px
+    }
+    .comments-layer>.heading h3 {
+        font-size: 16px
+    }
+    .comments-list-layer .comment-item {
+        padding: 0
+    }
+    .comments-list-layer .comment-item>.comment-item {
+        padding-right: 18px
+    }
+    .comments-list-layer .comment-item>.comment-item .right-col {
+        right: 30px
+    }
+    .comments-list-layer>.comment-item>.right-col {
+        width: 100%;
+        position: static;
+    }
+    .comments-list-layer .comment-item img {
+        display: none
+    }
+    .comments-list-layer>.comment-item>.left-col>.heading {
+        padding: 40px 0 15px
+    }
+    .comments-list-layer>.comment-item>.left-col>.cm-text {
+        margin-top: 5px
+    }
+    .comments-list-layer>.comment-item>.right-col button {
+        position: absolute;
+        left: 15px;
+        top: 0
+    }
+    .comments-list-layer .comment-item>.comment-item .left-col .heading {
+        padding: 8px 0
+    }
+    .last-blog-post {
+        display: block
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .comments-layer>.heading h3 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,332 @@
+/* ----tab---- */
+
+.tab-title {
+    margin-bottom: 30px;
+}
+
+.tab-title-lbl {
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 15px;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #e9eff3;
+    position: relative;
+    display: none;
+    margin-bottom: 45px;
+}
+
+.tab-title-lbl i {
+    font-style: normal;
+    font-size: 16px;
+    color: #2196f3;
+    font-weight: bold;
+    padding-right: 2px;
+}
+
+.tab-title ul {
+    display: table;
+}
+
+.tab-title ul li {
+    width: auto;
+    min-width: 40px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-table;
+    float: right;
+    padding: 0 20px;
+}
+
+.last-courses-layer .tab-title ul li a {
+    display: block;
+    line-height: 25px;
+    font-size: 18px;
+    color: #2d3339;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.tab-title ul li.active a,
+.tab-title ul li a:hover {
+    border-bottom: 3px solid #2196f3;
+    color: #2196f3;
+}
+
+.tab-title ul li a span {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.tab-content-layer>div.active {
+    display: block;
+}
+
+
+/* ----/tab---- */
+
+
+/*----filter----*/
+
+.filter-box-main-search-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.filter-box-main-search-label {
+    color: #1e2f38;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.filter-collapse-icon-label {
+    color: #c1cbd1 !important;
+    font-size: 15px;
+    margin-left: 6px;
+}
+
+.filter-box-main-select-body {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    border: 1px solid #edf1f4;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.12);
+    color: #8294a1;
+}
+
+.education-page-filter-side-items,
+.education-page-main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.education-page-filter-side-items {
+    padding: 10px;
+}
+
+.education-page-filter-side-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeff2;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.education-page-filter-side-title-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.education-page-filter-side-title-btn {
+    font-size: 13px;
+    color: #6fc341;
+    border: 1px solid #6fc341;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+.education-page-filter-side-title-btn:hover {
+    color: #6fc341;
+}
+
+.filter-item-collapse-text {
+    color: #1e2f38;
+    font-size: 17px;
+    /* font-weight: bold; */
+    line-height: 35px;
+    margin-right: 8px;
+}
+
+.filter-item-collapse-icon {
+    color: #6e8ea4;
+    font-size: 18px;
+}
+
+
+/* -----checkbox------ */
+
+.checkbox-option-filter-box {
+    color: #1e2f38;
+    font-size: 14px;
+}
+
+.checkbox-layer {
+    margin: 10px 0 20px;
+    padding: 0 20px;
+}
+
+.multi-checkbox-in-row .checkbox-option {
+    width: auto;
+    float: right;
+    display: table;
+    margin: 5px 20px 5px 0;
+    position: relative;
+}
+
+.multi-checkbox-in-row .checkbox-option input,
+.checkbox-layer .checkbox-option input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.multi-checkbox-in-row .checkbox-option label,
+.checkbox-layer .checkbox-option label {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    padding-right: 27px;
+}
+
+.multi-checkbox-in-row .checkbox-option label:before,
+.checkbox-layer .checkbox-option label:before {
+    width: 17px;
+    height: 17px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border: 1px solid #d1dce2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '\2713';
+    color: #fff;
+    font-family: 'Material-icon';
+    background: #fff
+}
+
+.multi-checkbox-in-row .checkbox-option input:checked+label:before,
+.checkbox-layer .checkbox-option input:checked+label:before {
+    content: '\2713';
+    color: #7ec857;
+    font-weight: bold;
+    border-color: #8ac81f;
+}
+
+.multi-checkbox-in-row .checkbox-option:hover label:before,
+.checkbox-layer .checkbox-option:hover label:before {
+    content: '\2713';
+    color: #7fbb00;
+    font-weight: bold;
+    border-color: #7fbb00;
+}
+
+.checkbox-layer {
+    margin: 10px 0;
+    position: relative;
+}
+
+.checkbox-layer .checkbox-option {
+    display: block;
+    margin: 4px 0 4px 25px;
+    position: relative;
+}
+
+
+/* ------------- */
+
+
+/* -------/filter-------- */
+
+
+/* -------style body card------- */
+
+.education-page-card-body,
+.education-page-card-main-body {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.education-page-card-marginBottom {
+    margin-bottom: 30px !important;
+}
+
+.education-page-card-main-body {
+    padding: 12px;
+}
+
+.education-page-card-main-title {
+    line-height: 40px;
+    font-size: 15px;
+    color: #1e2f38;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education-page-card-main-title:hover {
+    color: #00b3e9;
+}
+
+.education-page-card-main-items,
+.education-page-card-main-last-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.education-page-card-main-last-items {
+    justify-content: space-between;
+}
+
+.education-page-card-main-item1 {
+    color: #8899a0;
+}
+
+.education-page-card-main-item2 {
+    margin-right: 4px;
+    color: #686e71;
+}
+
+.education-page-card-main-num-item {
+    margin-right: 4px;
+    color: #6fc341;
+}
+
+.education-page-card-main-last-item1 {
+    color: #00b3e9;
+}
+
+.education-page-card-main-last-price {
+    color: #6fc341;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.education-page-card-main-item2,
+.education-page-card-main-item1,
+.education-page-card-main-last-item1,
+.education-page-card-main-num-item {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+
+/* ------------- */

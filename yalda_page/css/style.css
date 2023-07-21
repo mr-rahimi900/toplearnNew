@@ -1,0 +1,205 @@
+ /* Start Font */
+@font-face {
+  font-family: 'Beirut';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Far.Beirut.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'comic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/comic.ttf') format('truetype');
+}
+ /* End Font */
+
+  /* Start Landing-Yalda */
+.landing-yalda{
+    background: url('../images/landing-yalda.jpg') no-repeat center center;
+    position:relative;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing-yalda .logo{
+  position: absolute;
+    top: 10px;
+    right: 0;
+    width: 75px;
+    display: block;
+}
+.landing-yalda .yalda-details, 
+.landing-yalda .yalda-img {
+ padding: 100px 80px;
+ position: relative;
+}
+.landing-yalda .yalda-img::after {
+ content: '';
+ position: absolute;
+ inset: 0;
+ width: 100%;
+ height: 100%;
+ background: url('../images/bg-circle.png') no-repeat;
+ background-size: contain;
+ background-position: top right;
+ opacity: .5;
+ border-radius: 100%;
+ overflow: hidden;
+ -webkit-border-radius: 100%;
+ -moz-border-radius: 100%;
+ -ms-border-radius: 100%;
+ -o-border-radius: 100%;
+}
+.landing-yalda .title-heading .heading {
+ font-size:45px !important;
+ margin-bottom: 30px;
+ font-family: 'Beirut';
+ text-align: center;
+ color: #cf2339;
+}
+.landing-yalda .title-heading .heading span {
+ margin-bottom: 30px;
+ font-size: 60px;
+ font-weight: 600;
+ color: #6b0406;
+}
+.landing-yalda .title-heading .heading p {
+ margin-bottom: 30px;
+ color: #f9e9cc;
+ text-align: center;
+ text-shadow: 0 2px 15px #202020;
+}
+  .landing-yalda #timer{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'comic';
+    color: #6b0406;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .landing-yalda .yalda-button{
+    max-width: 200px;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #cf2339;
+    box-shadow: 0 2px 15px #202020;
+    border-radius: 8px;
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .landing-yalda .yalda-button a{
+    font-size: 20px;
+    font-weight: lighter;
+   height: 50px;
+   line-height: 50px;
+   font-family: 'Beirut';
+   color: #f9e9cc;
+  }
+  .landing-yalda .yalda-img{
+    width: 100%;
+  }
+    /* End Landing-Yalda */
+
+  /* Start Media Query */
+
+  @media (max-width: 1200px) {
+    .landing-yalda .yalda-details, 
+    .landing-yalda .yalda-img {
+     padding: 100px 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .landing-yalda .yalda-details {
+      text-align: center;
+    }
+    .landing-yalda #timer{
+      margin: 30px auto;
+    }
+    .landing-yalda .logo{
+      top: 10px;
+      width: 58px;
+  }
+.landing-yalda .yalda-button{
+margin: auto;
+}
+    }
+  @media (max-width: 768px) {
+    .landing-yalda{
+      background: url('../images/landing-mobile-yalda.jpg') no-repeat center center;
+      background-size: cover;
+      display: block;
+  }
+    .landing-yalda .logo{
+      right: 15px;
+    }
+    .landing-yalda .yalda-details, .landing-yalda .yalda-img{
+      padding: 70px 0;
+    }
+    .landing-yalda .yalda-details{
+      padding-bottom: 0;
+    }
+    .landing-yalda .title-heading .heading {
+      font-size:35px !important;
+     }
+     .landing-yalda .title-heading .heading span{
+      font-size: 40px;
+      line-height: 40px;
+      }
+      .landing-yalda #timer{
+        max-width: 300px;
+      }
+      .landing-yalda .yalda-img{
+        padding: 0 100px;
+      }
+    }
+    @media (max-width: 576px) {
+      .landing-yalda .yalda-details{
+       padding: 45px 20px;
+      }
+      .landing-yalda .title-heading .heading span,.landing-yalda .title-heading .heading p{
+        margin-bottom: 10px;
+      }
+       .landing-yalda .yalda-details{
+        padding-bottom: 0;
+      }
+      .landing-yalda .title-heading .heading{
+        font-size: 30px !important;
+      }
+      .landing-yalda .title-heading .heading span{
+        font-size: 25px;
+        font-weight: 500;
+      }
+      .landing-yalda #timer{
+        margin: 20 auto;
+        max-width: unset;
+      }
+      .landing-yalda #timer ul{
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+ 
+      .landing-yalda .yalda-button a{
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 200;
+      }
+      .landing-yalda #timer ul li .counter h5{
+        font-size: 22px;
+      }
+    }
+    @media (max-width: 480px){
+      .landing-yalda .title-heading .heading{
+        font-size: 24px;
+      }
+      .landing-yalda .yalda-img{
+        padding: 0 35px;
+      }
+    }
+     /* End Media Query */

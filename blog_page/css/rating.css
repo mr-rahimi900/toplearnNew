@@ -1,0 +1,27 @@
+.rating-section .question-area {
+    padding-top: 10px;
+    min-height: 50px;
+    opacity: 1;
+}
+
+.rating-section .question-area .question {
+    margin-bottom: 20px;
+    position: relative;
+    padding-right: 5px;
+}
+
+.rating-section .question-area .question::before {
+    content: "\2713";
+    position: absolute;
+    right: -15px;
+    top: -2px;
+    color: #00b3e9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rating-section .question-area .rate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

@@ -1,0 +1,163 @@
+
+.contact-layer{
+   padding: 40px 0 100px
+}
+.contact-layer .form-layer-style {
+  padding-right: 35px;
+  margin-bottom: 40px
+}
+.contact-layer .form-layer-style .input-layer{
+  margin-bottom: 20px
+}
+.contact-layer header{
+  border-top: 2px solid #e4ecef;
+  margin-bottom: 30px;
+}
+.contact-layer header h1{
+   width: auto;
+   display: table;
+   padding: 0 30px;
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 30px;
+   margin: -18px auto 40px;
+   background-color: #fff;
+   color: #56707c
+}
+.contact-info-layer{
+    margin-bottom: 40px
+}
+.contact-info-layer section{
+   padding: 22px 25px 24px;
+   position: relative;
+   border-radius: 4px;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   margin-bottom: 25px;
+}
+.contact-info-layer section h2{
+   font-size: 16px;
+   word-spacing: -1px;
+   line-height: 20px;
+   color: #1c84ef
+}
+.contact-info-layer section h2 i{
+   font-size: 25px;
+   line-height: 15px;
+   margin-left: 8px;
+   color: #1c84ef;
+   position: relative;
+   top: 5px;
+}
+.contact-info-layer section h2 i.icon-destination{
+   font-size: 32px;
+}
+.contact-info-layer section ul {
+   padding: 20px 0 0
+}
+.contact-info-layer section ul li {
+   line-height: 28px;
+   word-spacing: -1px
+}
+.contact-info-layer section ul li span {
+   font-size: 15px;
+   letter-spacing: 1px
+}
+.contact-info-layer section p{
+   padding: 20px 0 0 ;
+   line-height: 28px;
+}
+
+.form-layer-style .input-layer,
+.form-layer-style .textarea-layer{
+  width: 100%;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 35px
+}
+
+.form-layer-style .input-select-layer{
+    margin-bottom: 40px
+}
+.form-layer-style .input-layer span
+.form-layer-style .textarea-layer span{
+  font-size: 13px;
+  line-height: 22px;
+  padding: 5px 0;
+  color: #fa6060
+}
+
+.form-layer-style .input-layer label,
+.form-layer-style .textarea-layer label{
+  display: block;
+  line-height: 22px;
+  font-size: 14px;
+  word-spacing: -2px;
+  color: #6e8ea4;
+  margin-bottom: 0
+}
+.form-layer-style .input-layer label i,
+.form-layer-style .textarea-layer label i{
+  position: relative;
+  top: 2px;
+  color: #cedbe3;
+  margin-left: 6px;
+  font-size: 18px
+}
+.form-layer-style .input-layer > input{
+  position: relative;
+  top: 2px;
+  margin-left: 6px;
+  font-size: 14px;
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #e4ecef;
+  color: #56707c;
+  font-size: 14px;
+  word-spacing: -1px;
+  margin-top: 8px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.form-layer-style .textarea-layer > textarea{
+  position: relative;
+  top: 2px;
+  margin-left: 6px;
+  font-size: 14px;
+  width: 100%;
+  line-height: 25px;
+  height: 120px;
+  padding: 10px 15px;
+  border: 1px solid #e4ecef;
+  color: #56707c;
+  font-size: 14px;
+  word-spacing: -1px;
+  margin-top: 8px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  resize: none;
+}
+
+@media screen and (max-width : 991px){
+    .contact-layer .form-layer-style{
+        padding-right: 0
+      }
+}
+@media screen and (max-width : 600px){
+   .form-layer-style{
+        padding: 0
+    }
+    .form-layer-style .input-layer,.form-layer-style .textarea-layer{
+        margin-bottom: 25px
+    }
+}
+@media screen and (max-width : 480px){
+  .contact-layer{
+    padding: 20px 0
+  }
+}

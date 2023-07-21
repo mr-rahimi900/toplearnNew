@@ -1,0 +1,19 @@
+.showOnly,
+.showOnlyChlid {
+    display: block !important;
+}
+
+.Dis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons_category {
+    padding: 5px;
+    font-size: 18px;
+    color: #00b3e9;
+    cursor: pointer;
+    font-weight: 800;
+    user-select: none;
+}
